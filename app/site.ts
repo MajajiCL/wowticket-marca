@@ -5,7 +5,7 @@ export const BRAND = {
   assetsZip: "https://brand.wowticket.cl/wp-content/uploads/2024/12/assets-wowticket-v3.zip",
   links: {
     wowticket: "https://www.wowticket.cl",
-    wowpartner: "https://business.wowticket.cl/",
+    wowpos: "https://wowpos.cl",
     embajadores: "https://embajador.wowticket.cl/",
   },
   social: {

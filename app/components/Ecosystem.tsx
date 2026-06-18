@@ -1,12 +1,12 @@
 import Reveal from "./Reveal";
-import { Ticket2, Handshake, Star, ArrowUpRight } from "./icons";
+import { Ticket2, CreditCard, Star, ArrowUpRight } from "./icons";
 import { BRAND } from "../site";
 import styles from "./brand.module.css";
 
-/* Fuente oficial: sección "Encuentra más" */
+/* Sección "Encuentra más" (ecosistema) */
 const ITEMS = [
-  { icon: Ticket2, title: "Wowticket", text: "Venta de entradas online para tus eventos.", href: BRAND.links.wowticket },
-  { icon: Handshake, title: "WowPartner", text: "Conviértete en partner y haz crecer tu negocio.", href: BRAND.links.wowpartner },
+  { icon: Ticket2, title: "Ticketera", text: "Venta de entradas online para tus eventos.", href: BRAND.links.wowticket },
+  { icon: CreditCard, title: "WOWPOS", text: "Barra, boletería, guardarropía y estacionamiento en un solo sistema.", href: BRAND.links.wowpos },
   { icon: Star, title: "Embajadores", text: "Programa de embajadores Wowticket.", href: BRAND.links.embajadores },
 ];
 

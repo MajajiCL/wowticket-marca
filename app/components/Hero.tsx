@@ -18,7 +18,7 @@ export default function Hero() {
           </p>
           <div className={styles.heroCtas}>
             <a href={BRAND.assetsZip} className="btn btn-primary btn-lg" download>
-              <Download aria-hidden /> Descargar pack de contenido
+              <Download aria-hidden /> Descargar pack
             </a>
             <a href="#logo" className="btn btn-ghost btn-lg">
               Ver uso del logo <ArrowRight aria-hidden />

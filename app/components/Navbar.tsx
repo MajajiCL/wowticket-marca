@@ -26,7 +26,7 @@ export default function Navbar() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <nav className={`container ${styles.nav}`} aria-label="Principal">
         <a href="#top" className={styles.brand} aria-label="Wowticket Brand — inicio">
-          <Image src={asset("/logos/wowticket-blanco.png")} alt="Wowticket" width={56} height={42} priority className={styles.logo} />
+          <Image src={asset("/logos/wowticket-color.png")} alt="Wowticket" width={56} height={42} priority className={styles.logo} />
           <span className={styles.brandTag}>Brand</span>
         </a>
 

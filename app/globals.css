@@ -90,10 +90,10 @@ button { font-family: inherit; cursor: pointer; }
 
 /* ---------- Buttons ---------- */
 .btn {
-  --_pad-y: 14px; --_pad-x: 26px;
-  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-  min-height: 48px; padding: var(--_pad-y) var(--_pad-x);
-  font-family: var(--font-display); font-weight: 700; font-size: 0.98rem;
+  --_pad-y: 11px; --_pad-x: 22px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+  min-height: 44px; padding: var(--_pad-y) var(--_pad-x);
+  font-family: var(--font-display); font-weight: 700; font-size: 0.92rem;
   border-radius: var(--r-pill); border: 1px solid transparent;
   transition: transform .2s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;
   will-change: transform;
@@ -102,16 +102,16 @@ button { font-family: inherit; cursor: pointer; }
 .btn svg { width: 1.25em; height: 1.25em; flex: none; }
 .btn-primary {
   background: linear-gradient(135deg, var(--pink), var(--pink-2));
-  color: #fff; box-shadow: 0 10px 30px var(--pink-glow);
+  color: #fff; box-shadow: 0 6px 18px rgba(232,33,124,.28);
 }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 44px var(--pink-glow); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(232,33,124,.35); }
 .btn-primary:active { transform: translateY(0); }
 .btn-ghost {
   background: var(--card-2); color: #fff; border-color: var(--border-strong);
   backdrop-filter: blur(14px);
 }
 .btn-ghost:hover { transform: translateY(-2px); border-color: var(--pink); box-shadow: 0 0 0 1px var(--pink-glow); }
-.btn-lg { min-height: 54px; font-size: 1.05rem; --_pad-x: 32px; }
+.btn-lg { min-height: 46px; font-size: 0.98rem; --_pad-x: 26px; }
 .btn-block { width: 100%; }
 
 /* ---------- Glass cards ---------- */

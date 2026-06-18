@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
+import { asset } from "../asset";
 import styles from "./brand.module.css";
 
 /* Fuente oficial: "FONDOS BLANCOS – FULL COLOR – FONDOS NEGROS" */
@@ -26,7 +27,7 @@ export default function LogoUsage() {
             <Reveal key={u.title} delay={i * 90}>
               <figure className={`card card-hover ${styles.useCard}`}>
                 <div className={`${styles.preview} ${styles["preview_" + u.variant]}`}>
-                  <Image src={u.src} alt={u.alt} width={380} height={285} className={styles.useLogo} />
+                  <Image src={asset(u.src)} alt={u.alt} width={380} height={285} className={styles.useLogo} />
                 </div>
                 <figcaption className={styles.useCaption}>{u.title}</figcaption>
               </figure>

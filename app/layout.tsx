@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Montserrat, Outfit } from "next/font/google";
 import "./globals.css";
 
+const PREFIX = process.env.NEXT_PUBLIC_ASSET_PREFIX ?? "";
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800", "900"],
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
     description: "Uso correcto del logo, color oficial y descarga de assets de la marca Wowticket.",
     images: [{ url: "/logos/wowticket-color.png", width: 1890, height: 1417, alt: "Wowticket" }],
   },
-  icons: { icon: "/logos/favicon-192.png", apple: "/logos/favicon-192.png" },
+  icons: { icon: `${PREFIX}/logos/favicon-192.png`, apple: `${PREFIX}/logos/favicon-192.png` },
 };
 
 export const viewport: Viewport = {

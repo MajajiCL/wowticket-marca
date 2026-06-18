@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Download, Palette, ArrowRight } from "./icons";
 import { BRAND } from "../site";
+import { asset } from "../asset";
 import styles from "./brand.module.css";
 
 export default function Hero() {
@@ -27,7 +28,7 @@ export default function Hero() {
 
         <div className={styles.heroLogoWrap} aria-hidden="true">
           <div className={`card ${styles.heroLogoCard}`}>
-            <Image src="/logos/wowticket-color.png" alt="Logo Wowticket a todo color" width={760} height={570} className={styles.heroLogo} priority />
+            <Image src={asset("/logos/wowticket-color.png")} alt="Logo Wowticket a todo color" width={760} height={570} className={styles.heroLogo} priority />
             <span className={styles.heroChip}><Palette /> Color plano oficial</span>
           </div>
         </div>

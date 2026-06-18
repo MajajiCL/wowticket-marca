@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Instagram, Facebook } from "./icons";
 import { BRAND } from "../site";
+import { asset } from "../asset";
 import styles from "./brand.module.css";
 
 export default function Footer() {
@@ -8,7 +9,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.footerInner}`}>
         <div className={styles.footerBrand}>
-          <Image src="/logos/wowticket-blanco.png" alt="Wowticket" width={140} height={105} className={styles.footerLogo} />
+          <Image src={asset("/logos/wowticket-blanco.png")} alt="Wowticket" width={140} height={105} className={styles.footerLogo} />
           <p>Manual de marca · Utilización del logo corporativo de Wowticket.</p>
         </div>
         <div className={styles.footerRight}>

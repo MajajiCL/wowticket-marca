@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Download } from "./icons";
 import { BRAND } from "../site";
+import { asset } from "../asset";
 import styles from "./brand.module.css";
 
 const LINKS = [
@@ -25,7 +26,7 @@ export default function Navbar() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <nav className={`container ${styles.nav}`} aria-label="Principal">
         <a href="#top" className={styles.brand} aria-label="Wowticket Brand — inicio">
-          <Image src="/logos/wowticket-blanco.png" alt="Wowticket" width={56} height={42} priority className={styles.logo} />
+          <Image src={asset("/logos/wowticket-blanco.png")} alt="Wowticket" width={56} height={42} priority className={styles.logo} />
           <span className={styles.brandTag}>Brand</span>
         </a>
 
